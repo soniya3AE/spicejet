@@ -12,7 +12,6 @@ public class TestCase7_Multi_city_search {
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.airindia.com/");
-		//driver.switchTo().alert().accept();
 		driver.findElement(By.xpath("//button[@id='onetrust-accept-btn-handler']")).click();
 		driver.findElement(By.xpath("//div[@class='mat-select-arrow ng-tns-c64-1']")).click();
 		driver.findElement(By.xpath("(//span[@class='mat-option-text'])[3]")).click();

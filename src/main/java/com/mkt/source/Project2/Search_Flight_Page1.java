@@ -66,14 +66,14 @@ public class Search_Flight_Page1
 		wait.until(ExpectedConditions.elementToBeClickable(source_textbox));
 		Actions a1=new Actions(driver);
 		a1.sendKeys(source_textbox,"mum").build().perform();
-		//from_textbox.sendKeys("mumbai");
+		
     }
 	
 	public void enter_flightdestination(WebDriver driver)
 	{
 		Actions a1=new Actions(driver);
 		a1.sendKeys(destination_textbox,"kol").build().perform();
-		//from_textbox.sendKeys("mumbai");
+		
     }
 	
 	public void click_departure_date()
@@ -86,22 +86,15 @@ public class Search_Flight_Page1
 	}
 	public void select_month_year_depature_date()
 	{
-//		String str=selectmonthyear.getText();
-//		//System.out.println(str);
-//		if(str.equals("June 2024"))
-//		{
 			selectdatedeparture.click();
-//		}
+
 	}
 	
 	public void select_month_year_return_date()
 	{
-//		String str=selectmonthyear.getText();
-//		//System.out.println(str);
-//		if(str.equals("June 2024"))
-//		{
+		{
 			selectdatereturn.click();
-//		}
+		}
 	}
 	
 	public void click_passenger_dropdown()
@@ -129,8 +122,7 @@ public class Search_Flight_Page1
 	{
 		clicksearchflightbutton.click();
 		WebElement d=driver.findElement(By.xpath("//div[@class='css-1dbjc4n r-1awozwy r-19m6qjp r-1xfd6ze r-1loqt21 r-18u37iz r-1777fci r-ymp9ed r-1j3t67a r-1w50u8q r-ah5dr5 r-1otgn73 r-1n20pny']"));
-		//String modifytext=d.getText();
-		Assert.assertEquals(d.getText(), "Modify Search", "Search is unccessful");
+		Assert.assertEquals(d.getText(), "Modify Search", "Search is unsuccessful");
 	}
 	
 	

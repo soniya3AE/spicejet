@@ -19,9 +19,6 @@ import org.testng.Reporter;
 
 public class Login_page {
 
-
-
-
 	// static WebDriver driver;
 
 	// step 1 : define the webElement using Find by annotation
@@ -87,14 +84,14 @@ public class Login_page {
 	public void select_title(){
 		select_title.click();
 		Select s1 = new Select(select_title);
-		s1.selectByValue("MRS");
+		s1.selectByValue("Mrs");
 		Assert.assertTrue(true);
 		Reporter.log("user entered title");
 	}
 	
 	
 	public void enter_user_name() {
-		first_name.sendKeys("niya");
+		first_name.sendKeys("soniya");
 		Assert.assertTrue(true);
 		Reporter.log("entered user name");
 
@@ -118,7 +115,7 @@ public class Login_page {
 	}
 	
 	public void enter_user_phone_number() {
-		phone_number.sendKeys("878788089878");
+		phone_number.sendKeys("7406501839");
 		phone_number.sendKeys(Keys.ENTER);
 		Assert.assertTrue(true);
 		Reporter.log("user phone number  is entered");
@@ -128,7 +125,7 @@ public class Login_page {
 	public void select_dob(WebDriver driver) throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("dobDate"))).click();
-		dob.sendKeys("06/07/2006");
+		dob.sendKeys("06/07/1995");
 		dob.sendKeys(Keys.ENTER);
 		Assert.assertTrue(true);
 		Reporter.log("Selected date of birth");
@@ -139,7 +136,7 @@ public class Login_page {
 		JavascriptExecutor j1 = (JavascriptExecutor) driver;
 		j1.executeScript("arguments[0];", enter_email);
 
-		enter_email.sendKeys("soniyakamble29@gmail.com");
+		enter_email.sendKeys("soniyakamble27@gmail.com");
 		Assert.assertTrue(true);
 		Reporter.log("user email is entered");
 
@@ -191,11 +188,7 @@ public class Login_page {
 
 	}
 	
-	
-	
-	
-	
-	
+
 	// step3
 	public Login_page(WebDriver driver) {
 		PageFactory.initElements(driver, this);

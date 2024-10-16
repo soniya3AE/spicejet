@@ -58,7 +58,7 @@ public class Payment_Page {
 		driver.switchTo().defaultContent();
 		Thread.sleep(2000);
 		driver.switchTo().frame(cardholderiframe);
-		cardholdername.sendKeys("Saroj kund");
+		cardholdername.sendKeys("Soniya kamble");
 		driver.switchTo().defaultContent();
 		Thread.sleep(2000);
 		driver.switchTo().frame(cardmonthiframe);
@@ -70,7 +70,7 @@ public class Payment_Page {
 		driver.switchTo().defaultContent();
 		Thread.sleep(2000);
 		driver.switchTo().frame(cardyeariframe);
-		cardyear.sendKeys("234");
+		cardyear.sendKeys("233");
 		driver.switchTo().defaultContent();
 		Thread.sleep(2000);
 	}

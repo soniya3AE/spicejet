@@ -55,23 +55,11 @@ public class Search_flight_page {
 	}
 	
 	
-	
 	public void clickToForwardMonth() {
 		
 		departureCalender.click();
 		
-		//forward_Month.click();
-		//Assert.assertTrue(true);
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	// step3
 	public Search_flight_page(WebDriver driver) {

@@ -2,6 +2,13 @@ package com.mkt.test.Project2;
 
 import org.testng.annotations.Test;
 
+import com.mkt.source.Project2.Payment_Page;
+import com.mkt.source.Project2.Search_Flight_Page1;
+
+import maven.SpiceJet.Add_On_page;
+import maven.SpiceJet.Login_Page;
+import maven.SpiceJet.Passenger_details_Page;
+
 public class TestCase15_Reach_Till_Payment_Select_CreditCard extends LunchQuit{
 	
 	@Test

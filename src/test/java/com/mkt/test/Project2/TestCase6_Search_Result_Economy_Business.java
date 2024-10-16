@@ -8,6 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
+import com.mkt.source.Project2.Search_Flight_Page1;
+
+import maven.SpiceJet.Login_Page;
+
 public class TestCase6_Search_Result_Economy_Business extends LunchQuit {
 	@Test
 	public void Search_Result_Economy_Business() throws InterruptedException
@@ -24,9 +28,6 @@ public class TestCase6_Search_Result_Economy_Business extends LunchQuit {
 		seaflight1.enter_flightsource(driver);
 		seaflight1.enter_flightdestination(driver);
 		Thread.sleep(2000);
-		//seaflight1.click_departure_date();
-		//Thread.sleep(2000);
-		//seaflight1.select_date();
 		seaflight1.select_month_year_depature_date();
 		seaflight1.click_passenger_dropdown();
 		seaflight1.click_add_passenger();

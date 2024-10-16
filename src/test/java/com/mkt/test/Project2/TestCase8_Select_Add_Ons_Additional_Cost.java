@@ -2,6 +2,12 @@ package com.mkt.test.Project2;
 
 import org.testng.annotations.Test;
 
+import com.mkt.source.Project2.Search_Flight_Page1;
+
+import maven.SpiceJet.Add_On_page;
+import maven.SpiceJet.Login_Page;
+import maven.SpiceJet.Passenger_details_Page;
+
 public class TestCase8_Select_Add_Ons_Additional_Cost extends LunchQuit{
 	
  	@Test
@@ -19,9 +25,6 @@ public class TestCase8_Select_Add_Ons_Additional_Cost extends LunchQuit{
 	seaflight1.enter_flightsource(driver);
 	seaflight1.enter_flightdestination(driver);
 	Thread.sleep(2000);
-	//seaflight1.click_departure_date();
-	//Thread.sleep(2000);
-	//seaflight1.select_date();
 	seaflight1.select_month_year_depature_date();
 	seaflight1.click_passenger_dropdown();
 	seaflight1.click_add_passenger();

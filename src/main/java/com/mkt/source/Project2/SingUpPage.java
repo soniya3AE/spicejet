@@ -66,15 +66,15 @@ public class SingUpPage {
 	public void select_title()
 	{
 		Select s1=new Select(title);
-		s1.selectByVisibleText("Mr");
+		s1.selectByVisibleText("Mrs");
 	}
 	public void enter_firstname()
 	{
-		firstname.sendKeys("saroj");
+		firstname.sendKeys("soniya");
 	}
 	public void enter_lastname()
 	{
-		lastname.sendKeys("kund");
+		lastname.sendKeys("kamble");
 	}
 	public void select_country()
 	{
@@ -89,12 +89,12 @@ public class SingUpPage {
 	public void select_month()
 	{
 		Select s1=new Select(month);
-		s1.selectByValue("6");
+		s1.selectByValue("11");
 	}
 	public void select_year()
 	{
 		Select s1=new Select(year);
-		s1.selectByValue("1980");
+		s1.selectByValue("1995");
 	}
 	public void select_day()
 	{
@@ -108,19 +108,16 @@ public class SingUpPage {
 	
 	public void mobile_number()
 	{
-		mobilenumber.sendKeys("8080656111");
+		mobilenumber.sendKeys("7406501839");
 	}
 	public void enter_emailid(WebDriver driver) throws InterruptedException
 	{
-//		WebDriverWait w1=new WebDriverWait(driver, Duration.ofSeconds(10));
-//		w1.until(ExpectedConditions.visibilityOfElementLocated(By.id("email_id")));
 		emailid.click();
 		
 		Thread.sleep(4000);
-		
 		Actions a1=new Actions(driver);
-		a1.sendKeys(emailid, "saroj2323232@gmail.com").build().perform();
-		//emailid.sendKeys("test@test.com");
+		a1.sendKeys(emailid, "soniyakamble27@gmail.com").build().perform();
+		
 	}
 	public void enter_password(WebDriver driver) throws InterruptedException
 	{
@@ -128,17 +125,15 @@ public class SingUpPage {
 		Actions a1=new Actions(driver);
 		Thread.sleep(4000);
 		a1.click(newpassword).build().perform();
-		//newpassword.click();
-		
+		//newpassword.click();	
 		Thread.sleep(4000);
+		a1.sendKeys(newpassword, "Amma@1996").build().perform();
 		
-		a1.sendKeys(newpassword, "Password1@").build().perform();
-		//newpassword.sendKeys("Password1@");
 	}
 	public void confirm_password() throws InterruptedException
 	{
 		Thread.sleep(4000);
-		confirmpassword.sendKeys("Password1@");
+		confirmpassword.sendKeys("Amma@1996");
 	}
 	
 	public void checkbox(WebDriver driver) throws InterruptedException

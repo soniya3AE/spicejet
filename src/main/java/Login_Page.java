@@ -29,8 +29,6 @@ public class Login_Page {
 	@FindBy(xpath="(//input[@class='css-1cwyjr8 r-homxoj r-13awgt0 r-ubezar r-tmtnm0 r-oxtfae r-10paoce r-ymttw5 r-9qu9m4'])[1]")
 	WebElement enter_emailid;
 	
-	@FindBy(xpath="//div[@class='css-1dbjc4n r-1jkjb']/div[1]")
-	WebElement Hisaroj;
 	
 		
 	
@@ -44,11 +42,11 @@ public class Login_Page {
 	}
 	public void enter_mobile_number()
 	{
-		enter_mobilenumber.sendKeys("8080656110");
+		enter_mobilenumber.sendKeys("7406501839");
 	}
 	public void enter_password()
 	{
-		enter_password.sendKeys("Password1@");
+		enter_password.sendKeys("Amma@1996");
 	}
 	public void click_login_button()
 	{
@@ -57,12 +55,12 @@ public class Login_Page {
 	}
 	public void enter_wrong_mobile_number()
 	{
-		enter_mobilenumber.sendKeys("8080656112");
+		enter_mobilenumber.sendKeys("7406501839");
 		Assert.assertEquals(clickloginbutton, click_login_link);
 	}
 	public void enter_wrong_password()
 	{
-		enter_password.sendKeys("Password2@");
+		enter_password.sendKeys("Amma@1996");
 	}
 	public void email_select()
 	{
@@ -71,17 +69,17 @@ public class Login_Page {
 	
 	public void enter_emailid()
 	{
-		enter_emailid.sendKeys("skund27@gmail.com");
+		enter_emailid.sendKeys("soniyakamble@27@gmail.com");
 	}
 	
 	public void assertion_after_valid_login()
 	{
-		//Assert.assertEquals(Hisaroj.getText(), "Hi saroj", "Login not succcessful");
+
 		Assert.assertTrue(true);
 	}
 	public void assertion_after_invalid_login()
 	{
-		//Assert.assertEquals(Hisaroj.getText(), "Hi saroj", "Login not succcessful");
+	
 		Assert.assertTrue(false, "Login is not successful");
 	}
 	

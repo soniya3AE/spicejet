@@ -4,15 +4,11 @@ package com.mkt.test.Project2;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
-import com.mkt.source.Project2.AirIndia_Login_page;
 import com.mkt.source.Project2.Login_page;
 
 
-
-
 @Listeners(ListernerProgram.class)
-public class TC1_verify_Spicejet_New_user_Registeration   extends BaseLanchQuit{
+public class TC1_verify_Spicejet_New_user_Registeration   extends LunchQuit{
 	
 	//WebDriver driver;
 	
@@ -24,7 +20,6 @@ public class TC1_verify_Spicejet_New_user_Registeration   extends BaseLanchQuit{
 		l1.select_title();
 		l1.select_dob(driver);
 		l1.enter_user_name();
-	
 		l1.enter_user_last_name();
 		l1.enter_user_email(driver);
 		l1.select_nationality_from_drop_down();
